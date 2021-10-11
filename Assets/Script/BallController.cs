@@ -10,6 +10,7 @@ public class BallController : MonoBehaviour
     // Rigidbody2D Ball
     private Rigidbody2D rigidBody2D;
     private Vector2 trajectoryOrigin;
+    
 
     void PushBall()
     {
@@ -37,6 +38,7 @@ public class BallController : MonoBehaviour
         ResetBall();
         Invoke("PushBall", 3);
     }
+    
 
     void Start()
     {

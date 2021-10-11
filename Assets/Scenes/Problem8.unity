@@ -842,6 +842,7 @@ MonoBehaviour:
   kecepatan: 5
   cams: {fileID: 519420031}
   score: {fileID: 279448024}
+  spawns: {fileID: 1288641894}
 --- !u!1 &1069218126
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,6 +979,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sq: {fileID: 6548735806445514953, guid: 8b21d1165c6990d42b19aecb96785992, type: 3}
+  sqH: 6
+  sqW: 12
 --- !u!4 &1288641895
 Transform:
   m_ObjectHideFlags: 0

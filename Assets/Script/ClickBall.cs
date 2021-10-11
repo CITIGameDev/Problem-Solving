@@ -10,6 +10,7 @@ public class ClickBall : MonoBehaviour
     public Score score;
     Vector3 curs;
     Vector3 angl;
+    public SqCon spawns;
     private void Start()
     {
         ballbody = GetComponent<Rigidbody2D>();
@@ -23,12 +24,27 @@ public class ClickBall : MonoBehaviour
             transform.Translate(angl.normalized * kecepatan * Time.deltaTime);
         }
     }
+    private IEnumerator delay()
+    {
+        yield return new WaitForSeconds(8);
+        while (true)
+        {
+            float pqX = Random.Range(-spawns.sqW / 2, spawns.sqW / 2);
+            float pqY = Random.Range(-spawns.sqH / 2, spawns.sqH / 2);
+            if (pqX != transform.position.x && pqY != transform.position.y)
+            {
+                spawns.spawnsq(pqX, pqY);
+                break;
+            }
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Square")
         {
             score.upscore();
             Destroy(collision.gameObject);
+            StartCoroutine(delay());
         }
     }
 
