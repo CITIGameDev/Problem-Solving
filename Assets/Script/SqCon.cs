@@ -11,7 +11,7 @@ public class SqCon : MonoBehaviour
     private void Start()
     {
         spawnQ = new List<GameObject>(0);
-        int boxCount = Random.Range(10, 30);
+        int boxCount = Random.Range(5, 10);
         for (int i = 0; i <= boxCount; i++)
         {
         float pX = Random.Range(-sqW / 2, sqW / 2);

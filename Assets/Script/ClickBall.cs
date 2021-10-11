@@ -46,6 +46,11 @@ public class ClickBall : MonoBehaviour
             Destroy(collision.gameObject);
             StartCoroutine(delay());
         }
+        else if (collision.gameObject.tag == "Ally")
+        {
+            Destroy(collision.gameObject);
+            GameFlowManager.Instance.GameOver();
+        }
     }
 
 
