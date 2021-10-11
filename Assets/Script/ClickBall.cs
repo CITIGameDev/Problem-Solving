@@ -7,6 +7,7 @@ public class ClickBall : MonoBehaviour
     private Rigidbody2D ballbody;
     public float kecepatan;
     public Camera cams;
+    public Score score;
     Vector3 curs;
     Vector3 angl;
     private void Start()
@@ -21,8 +22,14 @@ public class ClickBall : MonoBehaviour
         {
             transform.Translate(angl.normalized * kecepatan * Time.deltaTime);
         }
-
-
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Square")
+        {
+            score.upscore();
+            Destroy(collision.gameObject);
+        }
     }
 
 
