@@ -416,8 +416,8 @@ GameObject:
   m_Component:
   - component: {fileID: 577866361}
   - component: {fileID: 577866360}
-  - component: {fileID: 577866365}
   - component: {fileID: 577866364}
+  - component: {fileID: 577866365}
   - component: {fileID: 577866363}
   - component: {fileID: 577866362}
   m_Layer: 0
@@ -549,10 +549,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 577866359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1edaaf82020e5ea40a8854346ef29b91, type: 3}
+  m_Script: {fileID: 11500000, guid: d91cee6eaca6e3a4aace414f9ec19061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kecepatan: 5
+  kecepatan: 5
+  cams: {fileID: 519420031}
 --- !u!1 &1069218126
 GameObject:
   m_ObjectHideFlags: 0
