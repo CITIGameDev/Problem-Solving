@@ -32,7 +32,7 @@ public class TimeManager : MonoBehaviour
 
         if (time > duration)
         {
-            GameFlowManager.Instance.GameOver();
+            GameFlowManager.Instance.winn();
             return;
         }
 

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4562346220592059548}
   - component: {fileID: 4550413772536293559}
   - component: {fileID: 3987314801946878829}
+  - component: {fileID: 8224634765743954275}
   m_Layer: 0
   m_Name: Kurumi
   m_TagString: Ally
@@ -138,3 +139,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8224634765743954275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4505448708246275482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bf1d9e09312ebd439f0b0df75e32948, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1

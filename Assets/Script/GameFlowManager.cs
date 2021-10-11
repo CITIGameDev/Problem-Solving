@@ -20,17 +20,27 @@ public class GameFlowManager : MonoBehaviour
 
     [Header("UI")]
     public UIGameOver GameOverUI;
+    public UIGameOver WIN;
+   
     public bool IsGameOver { get { return isGameOver; } }
     private bool isGameOver = false;
+    public bool IsWin { get { return isWin; } }
+    private bool isWin = false;
 
     private void Start()
     {
         isGameOver = false;
+        isWin = false;
     }
     public void GameOver()
     {
         isGameOver = true;
         GameOverUI.Show();
+    }
+    public void winn()
+    {
+        isWin = true;
+        WIN.Show();
     }
 
 }
